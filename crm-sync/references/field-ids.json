@@ -1,0 +1,21 @@
+{
+  "fourleads_custom_fields": {
+    "Stripe Customer ID": 15219,
+    "Circle Member ID": null,
+    "Stripe Payment Link ID": null,
+    "Stripe Subscription ID": null,
+    "connect_promo_monatlich": 15301,
+    "connect_fenster_ablauf": 15302,
+    "connect_promo_jaehrlich": 15303,
+    "connect_fenster_ablauf_text": 15305,
+    "connect_bodyguide_gutscheincode": 15306
+  },
+  "circle_profile_fields": {
+    "stripe_customer_id": {"key": "stripe_customer_id", "label": "Stripe Customer ID"},
+    "stripe_subscription_id": {"key": "stripe_subscription_id", "label": "Stripe Subscription ID"},
+    "stripe_email": {"key": "stripe_email", "label": "Stripe Email"},
+    "subscription_price": {"key": "subscription_price", "label": "Abo Preis"},
+    "subscription_interval": {"key": "subscription_interval", "label": "Abo Intervall"}
+  },
+  "notes": "4leads fields use numeric IDs in URL path. Circle fields use string keys in JSON body. null = ID not yet discovered, use Chrome DevTools to find."
+}

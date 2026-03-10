@@ -1,0 +1,122 @@
+{
+  "mandant": "671912-20048",
+  "fiscal_year": 2025,
+  "chart_of_accounts": "SKR03",
+  "audit_date": "2026-02-22",
+  "pre_import_state": true,
+  "note": "Snapshot BEFORE EXTF import processed by StB. All Stripe revenue/fees/refunds still missing from DATEV.",
+  "revenue": {
+    "datev_pre_import_eur": 31351.83,
+    "stripe_actual_eur": 313252.00,
+    "gap_eur": 281900.17,
+    "accounts": {
+      "4000": {"name": "Erlöse aus Leistungen", "txns": 1, "haben": 402.49, "note": "LES MILLS affiliate commission"},
+      "4400": {"name": "Erlöse 19% USt", "txns": 75, "haben": 29284.29, "note": "Mix of SevDesk + manual bookings"},
+      "4839": {"name": "Section 13b Reverse Charge", "txns": 1, "haben": 1662.02, "note": "InnoNature (BU-Key 3)"},
+      "4840": {"name": "USt-pflichtige Umsätze (Rounding)", "txns": 5, "haben": 3.03, "note": "UStVA rounding amounts"},
+      "3806": {"name": "Umsatzsteuer 19% (Ausgangsrechnungen)", "txns": 76, "haben": 5879.94, "note": "Output VAT collected"}
+    }
+  },
+  "expenses": {
+    "note": "Pre-import: Stripe fees (11,402 EUR) completely absent from DATEV",
+    "accounts": {
+      "5906": {"name": "Bürokosten", "txns": 3, "soll": 2000.00},
+      "6300": {"name": "Sonstige betriebliche Aufwendungen", "txns": 26, "soll": 1150.29},
+      "6400": {"name": "Versicherungen", "txns": 1, "soll": 386.06},
+      "6600": {"name": "Werbekosten", "txns": 22, "soll": 59826.22},
+      "6645": {"name": "Nicht abzugsfähige Betriebsausgaben", "txns": 2, "soll": 54.28},
+      "6800": {"name": "Porto", "txns": 1, "soll": 19.49},
+      "6810": {"name": "Internetkosten", "txns": 1, "soll": 264.52},
+      "6821": {"name": "Fortbildungskosten", "txns": 3, "soll": 5097.56},
+      "6825": {"name": "Rechts- und Beratungskosten", "txns": 3, "soll": 30311.63},
+      "6827": {"name": "Abschluss- und Prüfungskosten", "txns": 1, "soll": 121.80},
+      "6830": {"name": "Buchführungskosten", "txns": 3, "soll": 494.20},
+      "6837": {"name": "Aufwendungen für Lizenzen, Konzessionen", "txns": 103, "soll": 5974.29},
+      "6855": {"name": "Nebenkosten des Geldverkehrs", "txns": 15, "soll": 14.83, "note": "N26 cashback ONLY — zero Stripe fees booked"},
+      "6880": {"name": "Aufwendungen aus Währungsumrechnungen", "txns": 72, "soll": 18.20},
+      "6968": {"name": "Sonst. nicht abziehbare Aufwendungen", "txns": 3, "soll": 261.22}
+    }
+  },
+  "refunds": {
+    "datev_booked": 3,
+    "stripe_total": 66,
+    "missing": 63,
+    "datev_amount_eur": 385.67,
+    "stripe_total_eur": 11083.00,
+    "account": "70156"
+  },
+  "ust_status": {
+    "q1": {
+      "period": "2025-01 to 2025-03",
+      "gross_revenue_eur": 81875,
+      "estimated_ust_eur": 6475,
+      "filed": true,
+      "paid_eur": 1160,
+      "outstanding_eur": 5315
+    },
+    "q2": {
+      "period": "2025-04 to 2025-06",
+      "gross_revenue_eur": 148311,
+      "estimated_ust_eur": 11740,
+      "filed": true,
+      "paid_eur": 712,
+      "outstanding_eur": 11028
+    },
+    "q3": {
+      "period": "2025-07 to 2025-09",
+      "gross_revenue_eur": 44406,
+      "estimated_ust_eur": 3520,
+      "filed": false,
+      "paid_eur": 0,
+      "outstanding_eur": 3520
+    },
+    "q4": {
+      "period": "2025-10 to 2025-12",
+      "gross_revenue_eur": 189370,
+      "estimated_ust_eur": 15003,
+      "filed": false,
+      "paid_eur": 0,
+      "outstanding_eur": 15003
+    },
+    "total_estimated_ust_eur": 36738,
+    "total_filed_eur": 1872,
+    "total_outstanding_eur": 34866
+  },
+  "extf_delivered": {
+    "file": "EXTF_Stripe_Einzelbuchungen_2025.csv",
+    "delivered_to": "StB Andreas Möller",
+    "delivered_on": "2026-02-22",
+    "rows": 4960,
+    "charges": {"count": 2261, "total_eur": 324335},
+    "fees": {"count": 2633, "total_eur": 11402},
+    "refunds": {"count": 66, "total_eur": 11083},
+    "revenue_split": {
+      "account_8338_7pct_vat": {"charges": 854, "total_eur": 176434, "note": "Jan-Apr 2025"},
+      "account_8400_19pct_vat": {"charges": 1407, "total_eur": 147901}
+    }
+  },
+  "bank_balances": {
+    "sparkasse": 50234.25,
+    "n26": 109689.97,
+    "total": 159924.22,
+    "note": "As of 2026-02-22, from SuSa / bank statements"
+  },
+  "key_creditor_balances": {
+    "stripe_clearing_1360": {"soll": 1644.16, "haben": 296345.43, "note": "179 payout transactions to bank"},
+    "bank_sparkasse_1800": {"soll": 351972.63, "haben": 250529.17}
+  },
+  "stb_contact": {
+    "name": "Andreas Möller",
+    "firm": "Steuerberatungskanzlei",
+    "datev_kto": "70023",
+    "datev_internal": 700230000
+  },
+  "extf_account_mapping": {
+    "note": "DATEV uses 3 different numbering schemes",
+    "revenue_19pct": {"skr03_ui": "4400", "extf_import": "8400", "datev_api_internal": 44000000},
+    "revenue_7pct": {"skr03_ui": "4400", "extf_import": "8338", "datev_api_internal": 44000000},
+    "stripe_fees": {"skr03_ui": "6855", "extf_import": "4970", "datev_api_internal": 68550000},
+    "refunds": {"skr03_ui": "70156", "extf_import": "70156", "datev_api_internal": 701560000},
+    "stripe_clearing": {"skr03_ui": "1360", "extf_import": "1360", "datev_api_internal": 13600000}
+  }
+}

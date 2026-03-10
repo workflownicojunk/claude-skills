@@ -1,0 +1,31 @@
+{
+  "circle": {
+    "connect-monthly": 230678,
+    "connect-annual": 228771,
+    "connect-annual-legacy": 230679,
+    "connect-monthly-legacy": 230680,
+    "Connect (umbrella, legacy)": 202343,
+    "StrongerYou X.0": 215031,
+    "StrongerYou 3.0": 192239,
+    "StrongerYou 2.0": 155487,
+    "StrongerYou 1.0": 155485,
+    "Happy Body Training": 200831,
+    "C9 Reset": 199967,
+    "X.0 Abgeschlossen": 228773,
+    "Goldstatus": 212967
+  },
+  "fourleads": {
+    "connect-monthly": 43466,
+    "connect-annual": 43467,
+    "connect-monthly-legacy": 43468,
+    "connect-annual-legacy": 43469,
+    "SY Connect gekauft": 43111,
+    "SYX.0 gekauft": 43329,
+    "SY3.0 gekauft": 42800,
+    "BODY GUIDE Käufer": 42818,
+    "BG_97EUR_gekauft": 42848,
+    "Newsletter": 42824,
+    "Lead: 7-Tage-Challenge": 42997
+  },
+  "naming_convention": "kebab-case, identisch über alle Systeme. Neue Tags immer in beiden Systemen gleichzeitig anlegen."
+}

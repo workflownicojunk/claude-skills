@@ -1,0 +1,46 @@
+{
+  "skill_name": "gmail-workflow",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Bearbeite den Posteingang. Verarbeite alle E-Mails in info@nicolstanzel.de und beantworte sie.",
+      "expected_output": "The skill runs all 4 agents in sequence (triager -> validator -> responder -> executor). Triage result is written to /tmp/gmail-triage-result.json, validation to /tmp/gmail-validation-result.json, responses to /tmp/gmail-responses.json, execution results to /tmp/gmail-execution-result.json. All inbox emails are either answered and archived, or archived (system mails). Drafts folder is cleaned up.",
+      "files": [],
+      "expectations": [
+        "Skill invokes gmail-triager agent first",
+        "Skill reads /tmp/gmail-triage-result.json before proceeding to validation",
+        "Skill invokes gmail-validator agent for emails requiring Stripe/Circle checks",
+        "Skill invokes gmail-responder agent to formulate HTML replies",
+        "Skill invokes gmail-executor agent to send emails and batch-archive",
+        "gws batchModify is used (not individual modify calls) for archiving",
+        "No internal system names (Stripe, Supabase, Circle API) appear in any email body"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Es gibt eine E-Mail von sandra.mueller@web.de - sie will ihre monatliche Mitgliedschaft kündigen (189 EUR). Bearbeite das.",
+      "expected_output": "The skill identifies this as TYPE_B (coaching installment, not cancellable). It sends a reframing email explaining it's a payment installment, not a subscription. It does NOT cancel in Stripe. The email uses Nicol's warm, direct voice without apologies or em-dashes.",
+      "files": [],
+      "expectations": [
+        "Stripe data is checked before responding (price 189 EUR/month = TYPE_B)",
+        "No Stripe cancellation is executed",
+        "Response email contains reframing language about 'Ratenzahlung'",
+        "Response does NOT contain 'Tut mir leid', 'Entschuldigung', or em-dashes",
+        "Response is 3-5 sentences maximum",
+        "Email is archived after processing"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Posteingang verarbeiten. Es gibt u.a. eine Nachricht von noreply@paypal.com über eine fehlgeschlagene Zahlung.",
+      "expected_output": "The system notification from noreply@paypal.com is categorized as 'system' by the triager and goes directly to archive_ids — it is NOT answered. The email is removed from inbox via batchModify.",
+      "files": [],
+      "expectations": [
+        "noreply@paypal.com email is categorized as 'system'",
+        "No response email is composed or sent to the PayPal address",
+        "Email ID appears in archive_ids in the triage result",
+        "batchModify removes it from inbox"
+      ]
+    }
+  ]
+}

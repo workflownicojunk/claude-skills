@@ -1,0 +1,1558 @@
+{
+  "42qd": {
+    "currentRecieverCount": 13244,
+    "totalBase": 13244,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 403,
+    "clicked_multi": 451,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2729,
+    "opened_multi": 3228,
+    "opened_avg": 1.1828508611212898,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 13230,
+    "bounced": 14,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 170,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 170,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726218
+  },
+  "MmMg": {
+    "currentRecieverCount": 13395,
+    "totalBase": 13395,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 573,
+    "clicked_multi": 667,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 3706,
+    "opened_multi": 4435,
+    "opened_avg": 1.196708041014571,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 13372,
+    "bounced": 23,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 237,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 237,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726219
+  },
+  "oqbl": {
+    "currentRecieverCount": 14620,
+    "totalBase": 14620,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 503,
+    "clicked_multi": 599,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 4112,
+    "opened_multi": 5003,
+    "opened_avg": 1.2166828793774318,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 13559,
+    "bounced": 1061,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 221,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 221,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726219
+  },
+  "83YQ": {
+    "currentRecieverCount": 2252,
+    "totalBase": 2252,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 76,
+    "clicked_multi": 101,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 762,
+    "opened_multi": 905,
+    "opened_avg": 1.1876640419947506,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 2252,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 65,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 65,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726220
+  },
+  "dGmX": {
+    "currentRecieverCount": 2342,
+    "totalBase": 2342,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 96,
+    "clicked_multi": 104,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 886,
+    "opened_multi": 1040,
+    "opened_avg": 1.1738148984198646,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 2342,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 89,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 89,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726220
+  },
+  "0Ja2": {
+    "currentRecieverCount": 2447,
+    "totalBase": 2447,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 153,
+    "clicked_multi": 170,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 1102,
+    "opened_multi": 1293,
+    "opened_avg": 1.1733212341197823,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 2445,
+    "bounced": 2,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 95,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 95,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726221
+  },
+  "2JNp": {
+    "currentRecieverCount": 12035,
+    "totalBase": 12035,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 134,
+    "clicked_multi": 147,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2891,
+    "opened_multi": 3426,
+    "opened_avg": 1.1850570736769284,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 12024,
+    "bounced": 11,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 163,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 163,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726221
+  },
+  "OZjR": {
+    "currentRecieverCount": 12401,
+    "totalBase": 12401,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 245,
+    "clicked_multi": 272,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 3005,
+    "opened_multi": 3624,
+    "opened_avg": 1.205990016638935,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 12394,
+    "bounced": 7,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 171,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 171,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726222
+  },
+  "qqrj": {
+    "currentRecieverCount": 13159,
+    "totalBase": 13159,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 164,
+    "clicked_multi": 189,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 3306,
+    "opened_multi": 3991,
+    "opened_avg": 1.207199032062916,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 12818,
+    "bounced": 341,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 227,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 227,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726222
+  },
+  "P7rY": {
+    "currentRecieverCount": 799,
+    "totalBase": 799,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 0,
+    "clicked_multi": 0,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 444,
+    "opened_multi": 636,
+    "opened_avg": 1.4324324324324325,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 793,
+    "bounced": 6,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 8,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 8,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726223
+  },
+  "83EQ": {
+    "currentRecieverCount": 13509,
+    "totalBase": 13509,
+    "lastUpdated": "0 Min., 02:50",
+    "clicked": 618,
+    "clicked_multi": 692,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 4119,
+    "opened_multi": 5033,
+    "opened_avg": 1.2218985190580238,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 13488,
+    "bounced": 21,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 226,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 226,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771725020
+  },
+  "0Jlj": {
+    "currentRecieverCount": 9306,
+    "totalBase": 9306,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 83,
+    "clicked_multi": 93,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2137,
+    "opened_multi": 2520,
+    "opened_avg": 1.1792232101076274,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 9302,
+    "bounced": 4,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 170,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 170,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726224
+  },
+  "NOxG": {
+    "currentRecieverCount": 9572,
+    "totalBase": 9572,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 140,
+    "clicked_multi": 158,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2270,
+    "opened_multi": 2810,
+    "opened_avg": 1.2378854625550662,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 9415,
+    "bounced": 157,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 108,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 108,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726224
+  },
+  "7aEV": {
+    "currentRecieverCount": 248,
+    "totalBase": 248,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 19,
+    "clicked_multi": 28,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 101,
+    "opened_multi": 140,
+    "opened_avg": 1.386138613861386,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 248,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 0,
+    "optouts": [],
+    "updatedAt": 1771726225
+  },
+  "Gnbk": {
+    "currentRecieverCount": 9900,
+    "totalBase": 9900,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 207,
+    "clicked_multi": 234,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 3291,
+    "opened_multi": 4097,
+    "opened_avg": 1.2449103615922212,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 9899,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 229,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 229,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726225
+  },
+  "Ymqy": {
+    "currentRecieverCount": 9836,
+    "totalBase": 9836,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 215,
+    "clicked_multi": 232,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2658,
+    "opened_multi": 3319,
+    "opened_avg": 1.2486832204665161,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 9831,
+    "bounced": 5,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 124,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 124,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726226
+  },
+  "kmbd": {
+    "currentRecieverCount": 9988,
+    "totalBase": 9988,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 184,
+    "clicked_multi": 194,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2676,
+    "opened_multi": 3310,
+    "opened_avg": 1.2369207772795217,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 9983,
+    "bounced": 5,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 151,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 151,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726226
+  },
+  "gGnE": {
+    "currentRecieverCount": 10359,
+    "totalBase": 10359,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 248,
+    "clicked_multi": 281,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2919,
+    "opened_multi": 3556,
+    "opened_avg": 1.2182254196642686,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 10221,
+    "bounced": 138,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 169,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 169,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726227
+  },
+  "QMLR": {
+    "currentRecieverCount": 10504,
+    "totalBase": 10504,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 162,
+    "clicked_multi": 182,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2498,
+    "opened_multi": 3045,
+    "opened_avg": 1.2189751801441153,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 10499,
+    "bounced": 5,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 191,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 191,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726227
+  },
+  "Xn0N": {
+    "currentRecieverCount": 11092,
+    "totalBase": 11092,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 445,
+    "clicked_multi": 483,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 3613,
+    "opened_multi": 4519,
+    "opened_avg": 1.2507611403265984,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 10944,
+    "bounced": 148,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 209,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 209,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726228
+  },
+  "0JMg": {
+    "currentRecieverCount": 11141,
+    "totalBase": 11141,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 521,
+    "clicked_multi": 613,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 3396,
+    "opened_multi": 4327,
+    "opened_avg": 1.2741460541813898,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 10785,
+    "bounced": 356,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 199,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 199,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726228
+  },
+  "gGPX": {
+    "currentRecieverCount": 62,
+    "totalBase": 62,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 8,
+    "clicked_multi": 9,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 37,
+    "opened_multi": 54,
+    "opened_avg": 1.4594594594594594,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 59,
+    "bounced": 3,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 0,
+    "optouts": [],
+    "updatedAt": 1771726229
+  },
+  "lMpk": {
+    "currentRecieverCount": 65,
+    "totalBase": 65,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 15,
+    "clicked_multi": 26,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 49,
+    "opened_multi": 90,
+    "opened_avg": 1.836734693877551,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 65,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 0,
+    "optouts": [],
+    "updatedAt": 1771726229
+  },
+  "eXg3": {
+    "currentRecieverCount": 44,
+    "totalBase": 44,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 13,
+    "clicked_multi": 26,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 33,
+    "opened_multi": 69,
+    "opened_avg": 2.090909090909091,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 44,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 0,
+    "optouts": [],
+    "updatedAt": 1771726230
+  },
+  "0Jgg": {
+    "currentRecieverCount": 10287,
+    "totalBase": 10287,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 363,
+    "clicked_multi": 408,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 3093,
+    "opened_multi": 4083,
+    "opened_avg": 1.3200775945683803,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 10261,
+    "bounced": 26,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 140,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 140,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726230
+  },
+  "pE4B": {
+    "currentRecieverCount": 35,
+    "totalBase": 35,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 5,
+    "clicked_multi": 10,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 21,
+    "opened_multi": 27,
+    "opened_avg": 1.2857142857142858,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 35,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 1,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 1,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726237
+  },
+  "6NYr": {
+    "currentRecieverCount": 43,
+    "totalBase": 43,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 10,
+    "clicked_multi": 14,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 28,
+    "opened_multi": 42,
+    "opened_avg": 1.5,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 40,
+    "bounced": 3,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 0,
+    "optouts": [],
+    "updatedAt": 1771726238
+  },
+  "P7pl": {
+    "currentRecieverCount": 46,
+    "totalBase": 46,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 9,
+    "clicked_multi": 10,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 31,
+    "opened_multi": 48,
+    "opened_avg": 1.5483870967741935,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 46,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 0,
+    "optouts": [],
+    "updatedAt": 1771726238
+  },
+  "lMBG": {
+    "currentRecieverCount": 7194,
+    "totalBase": 7194,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 180,
+    "clicked_multi": 199,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 1730,
+    "opened_multi": 2043,
+    "opened_avg": 1.1809248554913294,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 7056,
+    "bounced": 138,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 139,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 139,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726239
+  },
+  "5oRQ": {
+    "currentRecieverCount": 7335,
+    "totalBase": 7335,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 227,
+    "clicked_multi": 242,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2084,
+    "opened_multi": 2528,
+    "opened_avg": 1.2130518234165066,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 7332,
+    "bounced": 3,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 161,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 161,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726239
+  },
+  "83oY": {
+    "currentRecieverCount": 7683,
+    "totalBase": 7683,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 213,
+    "clicked_multi": 238,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2387,
+    "opened_multi": 2963,
+    "opened_avg": 1.2413070800167574,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 7667,
+    "bounced": 16,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 154,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 154,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726240
+  },
+  "rpMy": {
+    "currentRecieverCount": 1511,
+    "totalBase": 1511,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 110,
+    "clicked_multi": 140,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 563,
+    "opened_multi": 721,
+    "opened_avg": 1.280639431616341,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 1511,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 48,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 48,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726241
+  },
+  "42gn": {
+    "currentRecieverCount": 1548,
+    "totalBase": 1548,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 143,
+    "clicked_multi": 175,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 611,
+    "opened_multi": 772,
+    "opened_avg": 1.2635024549918168,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 1548,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 42,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 42,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726241
+  },
+  "OZQA": {
+    "currentRecieverCount": 1646,
+    "totalBase": 1646,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 236,
+    "clicked_multi": 281,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 799,
+    "opened_multi": 1043,
+    "opened_avg": 1.3053817271589487,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 1644,
+    "bounced": 2,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 34,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 34,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726242
+  },
+  "b6pX": {
+    "currentRecieverCount": 1811,
+    "totalBase": 1811,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 34,
+    "clicked_multi": 55,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 887,
+    "opened_multi": 1096,
+    "opened_avg": 1.2356257046223225,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 1811,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 124,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 124,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726242
+  },
+  "yV7V": {
+    "currentRecieverCount": 1918,
+    "totalBase": 1918,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 112,
+    "clicked_multi": 132,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 1038,
+    "opened_multi": 1249,
+    "opened_avg": 1.2032755298651252,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 1918,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 115,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 115,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726243
+  },
+  "KvM3": {
+    "currentRecieverCount": 6990,
+    "totalBase": 6990,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 180,
+    "clicked_multi": 215,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 1899,
+    "opened_multi": 2271,
+    "opened_avg": 1.1958925750394944,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 6988,
+    "bounced": 2,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 146,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 146,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726243
+  },
+  "6NlE": {
+    "currentRecieverCount": 7914,
+    "totalBase": 7914,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 49,
+    "clicked_multi": 52,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 1871,
+    "opened_multi": 2222,
+    "opened_avg": 1.1876002137894175,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 7912,
+    "bounced": 2,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 68,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 68,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726244
+  },
+  "EnlE": {
+    "currentRecieverCount": 8195,
+    "totalBase": 8195,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 149,
+    "clicked_multi": 164,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2057,
+    "opened_multi": 2424,
+    "opened_avg": 1.1784151677199806,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 8188,
+    "bounced": 7,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 147,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 147,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726244
+  },
+  "kmdP": {
+    "currentRecieverCount": 8462,
+    "totalBase": 8462,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 96,
+    "clicked_multi": 101,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2229,
+    "opened_multi": 2662,
+    "opened_avg": 1.1942575145805294,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 8461,
+    "bounced": 1,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 173,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 173,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726245
+  },
+  "5o5y": {
+    "currentRecieverCount": 8909,
+    "totalBase": 8909,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 211,
+    "clicked_multi": 226,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 2775,
+    "opened_multi": 3329,
+    "opened_avg": 1.1996396396396396,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 8887,
+    "bounced": 22,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 251,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 251,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726245
+  },
+  "0J8B": {
+    "currentRecieverCount": 3530,
+    "totalBase": 3530,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 633,
+    "clicked_multi": 700,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 1803,
+    "opened_multi": 2205,
+    "opened_avg": 1.2229617304492513,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 3528,
+    "bounced": 2,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 93,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 93,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726246
+  },
+  "42Rd": {
+    "currentRecieverCount": 1324,
+    "totalBase": 1324,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 184,
+    "clicked_multi": 237,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 870,
+    "opened_multi": 1145,
+    "opened_avg": 1.3160919540229885,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 1324,
+    "bounced": 0,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 50,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 50,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726246
+  },
+  "OZxd": {
+    "currentRecieverCount": 2899,
+    "totalBase": 2899,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 36,
+    "clicked_multi": 39,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 730,
+    "opened_multi": 861,
+    "opened_avg": 1.1794520547945206,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 2898,
+    "bounced": 1,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 34,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 34,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726247
+  },
+  "lMRy": {
+    "currentRecieverCount": 3077,
+    "totalBase": 3077,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 21,
+    "clicked_multi": 24,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 794,
+    "opened_multi": 948,
+    "opened_avg": 1.1939546599496222,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 2980,
+    "bounced": 97,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 54,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 54,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726248
+  },
+  "b6bm": {
+    "currentRecieverCount": 3170,
+    "totalBase": 3170,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 34,
+    "clicked_multi": 39,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 850,
+    "opened_multi": 997,
+    "opened_avg": 1.1729411764705882,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 3169,
+    "bounced": 1,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 63,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 63,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726248
+  },
+  "Vmlr": {
+    "currentRecieverCount": 3258,
+    "totalBase": 3258,
+    "lastUpdated": "0 Min., 03:10",
+    "clicked": 53,
+    "clicked_multi": 55,
+    "clickedLabels": [
+      "Klicks",
+      "Nicht geklickt"
+    ],
+    "opened": 886,
+    "opened_multi": 1041,
+    "opened_avg": 1.174943566591422,
+    "openedLabels": [
+      "Öffnungen",
+      "Nicht geöffnet"
+    ],
+    "send": 3253,
+    "bounced": 5,
+    "sendLabels": [
+      "Empfangen",
+      "Abgelehnt"
+    ],
+    "optouts_total": 60,
+    "optouts": [
+      {
+        "id": 39171,
+        "hash": "Grn3",
+        "count": 60,
+        "name": "Nachrichten von Nicol Stanzel (Standard)"
+      }
+    ],
+    "updatedAt": 1771726249
+  }
+}

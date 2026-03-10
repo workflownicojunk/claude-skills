@@ -1,0 +1,24 @@
+{
+  "description": "Bekannte Email-Mismatches zwischen Stripe und Circle. Stripe-Email != Circle-Email für dieselbe Person.",
+  "last_updated": "2026-03-06",
+  "matched_mismatches": [
+    {"stripe_email": "nadine2309@me.com", "circle_email": "lillimaus-05@web.de", "circle_id": 75477158, "name": "Nadine Ollrogge", "reason": "Private vs. iCloud"},
+    {"stripe_email": "manueiaert@gmx.de", "circle_email": "manueisert@gmx.de", "circle_id": 62666078, "name": "Manuela Eisert", "reason": "Typo in Stripe (ia vs is)"},
+    {"stripe_email": "info@rafaela-schmidt.de", "circle_email": "rafaela@rafaela-schmidt.de", "circle_id": 38761750, "name": "Rafaela Schmidt", "reason": "Business vs. persönlich"},
+    {"stripe_email": "andrea.tom@sunrise.ch", "circle_email": "andrea.tom@hotmail.ch", "circle_id": 39304311, "name": "Andrea Hoppe", "reason": "Provider-Wechsel"},
+    {"stripe_email": "tatjana-lindemann@t-online.de", "circle_email": "tatjanalindemann78@gmail.com", "circle_id": 39305049, "name": "Tatjana Fischer", "reason": "Anderer Provider"},
+    {"stripe_email": "kerstin.markus1@web.de", "circle_email": "kerstin.loibl87@web.de", "circle_id": 38826380, "name": "Kerstin Loibl", "reason": "Nachname geändert"},
+    {"stripe_email": "nwoodgett@web.de", "circle_email": "nwoodgett@googlemail.com", "circle_id": 38800536, "name": "Nicole Woodgett", "reason": "web.de vs googlemail"},
+    {"stripe_email": "ricardagermann@gmail.ch", "circle_email": "ricardagermann@gmail.com", "circle_id": 38826459, "name": "Ricarda Germann", "reason": ".ch vs .com"},
+    {"stripe_email": "julia.speckbacher114@web.de", "circle_email": "juliaspeckbacher@gmx.de", "circle_id": 38826471, "name": "Julia Speckbacher", "reason": "Andere Email"},
+    {"stripe_email": "sandra.amacher@pkwyss.ch", "circle_email": "sandra100.sam@gmail.com", "circle_id": 39306893, "name": "Sandra Amacher", "reason": "Arbeits- vs. Privat-Email"},
+    {"stripe_email": "jenny1986_w@yahoo.de", "circle_email": "kilianjenny@yahoo.com", "circle_id": 39304310, "name": "Jennifer Kilian", "reason": "Andere Yahoo-Email"}
+  ],
+  "truly_unmatched": [
+    {"stripe_email": "pstfach23@freenet.de", "name": "Claudia Krüger", "tag": "connect-annual-legacy", "gmail_hint": "perfect2018@freenet.de (nicht in Circle)"},
+    {"stripe_email": "sunny-julia-2006@web.de", "name": "Julia Günther", "tag": "connect-monthly-legacy", "gmail_hint": "keine Korrespondenz gefunden"},
+    {"stripe_email": "m.engelbrecht@sensus-gmbh.de", "name": "Michael Engelbrecht", "tag": "connect-monthly-legacy", "gmail_hint": "keine Korrespondenz gefunden"},
+    {"stripe_email": "office@strobl.bz.it", "name": "Thomas Steck Strobl", "tag": "connect-annual-legacy", "gmail_hint": "Nur 1 weitergeleiteter Beleg"}
+  ],
+  "matching_strategy": "1. Exact email match, 2. Fuzzy name match (SequenceMatcher > 0.7), 3. Email local-part similarity, 4. Gmail correspondence search"
+}

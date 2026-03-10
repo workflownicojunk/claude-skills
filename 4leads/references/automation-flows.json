@@ -1,0 +1,139 @@
+{
+  "extracted": "2026-02-22T03:20:00+01:00",
+  "automations": [
+    {
+      "hash": "rL52",
+      "name": "Test",
+      "processId": "17686",
+      "status": "Bearbeitung",
+      "steps": [
+        {"num": "0", "type": "trigger", "label": "Start-Automation", "detail": "Noch kein Auslöser wurde gewählt", "actionType": "get_start_automation_edit"}
+      ]
+    },
+    {
+      "hash": "8VlR",
+      "name": "Freebie x TW (2-2)",
+      "processId": "17546",
+      "status": "Aktiv",
+      "steps": [
+        {"num": "0", "type": "trigger", "label": "Start-Automation", "detail": "Sobald das Tag TW_Happy Body Training_gekauft hinzugefügt wurde"},
+        {"num": "1", "type": "action", "label": "Der Follow-Up \"Freebie x Tripwire Funnel\" wird gestoppt"},
+        {"num": "2", "type": "action", "label": "(action details)", "actionType": "get_action_details"},
+        {"num": "3", "type": "email", "label": "Die E-Mail \"TW WELCOME ZUM TRIPWIRE (Happy Body Training)\" wird gesendet"}
+      ]
+    },
+    {
+      "hash": "mBJ5",
+      "name": "Freebie x TW (1-2)",
+      "processId": "17526",
+      "status": "Aktiv",
+      "steps": [
+        {"num": "0", "type": "trigger", "label": "Start-Automation", "detail": "Sobald eine Eintragung in das Formular Lead: 7-Tage-Challenge bestätigt wurde"},
+        {"num": "1", "type": "action", "label": "(action details)"},
+        {"num": "2", "type": "action", "label": "UTM Parameter setzen FSEs werden Werte für Felder gesetzt"},
+        {"num": "3", "type": "action", "label": "UTM Parameter setzen LSEs werden Werte für Felder gesetzt"},
+        {"num": "4", "type": "wait", "label": "Warte 1 Minute"},
+        {"num": "5", "type": "email", "label": "Die E-Mail \"Freebie Welcome + Download\" wird gesendet"},
+        {"num": "6", "type": "wait", "label": "Warte 1 Stunde"},
+        {"num": "7", "type": "condition", "label": "Hat TW gekauft?"},
+        {"num": "8", "type": "action", "label": "Der Follow-Up \"Freebie x Tripwire Funnel\" wird gestartet"}
+      ]
+    },
+    {
+      "hash": "Zxog",
+      "name": "SY3.0 Webinarkampagne Everwebinar",
+      "processId": "17465",
+      "status": "Aktiv",
+      "steps": [
+        {"num": "0", "type": "trigger", "label": "Start-Automation", "detail": "Sobald eine Eintragung in das Formular StrongerYou 3.0 Launch Workshop 2 Everwebinar bestätigt wurde"},
+        {"num": "1", "type": "action", "label": "(action details)"},
+        {"num": "2", "type": "action", "label": "Tag(s) hinzufügen"},
+        {"num": "3", "type": "action", "label": "Es werden Werte für Felder gesetzt"},
+        {"num": "4", "type": "action", "label": "Es werden Werte für Felder gesetzt"},
+        {"num": "5", "type": "email", "label": "Die E-Mail \"SY3.0 Everwebinar Registrierungsbestätigung\" wird gesendet"},
+        {"num": "6", "type": "action", "label": "Der Follow-Up \"SY3.0 Everwebinar Follow Up\" wird gestartet"}
+      ]
+    },
+    {
+      "hash": "A3Xe",
+      "name": "StrongerYou X.0 - Willkommens-E-Mail bei Kauf",
+      "processId": "17463",
+      "status": "Aktiv",
+      "steps": [
+        {"num": "0", "type": "trigger", "label": "Start-Automation", "detail": "Sobald das Tag SYX.0 gekauft hinzugefügt wurde"},
+        {"num": "1", "type": "action", "label": "(action details)"},
+        {"num": "2", "type": "email", "label": "Die E-Mail \"SYX.0 Willkommensmail nach Kauf\" wird gesendet"}
+      ]
+    },
+    {
+      "hash": "qlJ7",
+      "name": "SY3.0 Direktregistrierungen Webinarjam",
+      "processId": "17458",
+      "status": "Aktiv",
+      "steps": [
+        {"num": "0", "type": "trigger", "label": "Start-Automation", "detail": "Sobald ein Webhook eintrifft"},
+        {"num": "1", "type": "action", "label": "(action details)"},
+        {"num": "2", "type": "action", "label": "Tag(s) hinzufügen"}
+      ]
+    },
+    {
+      "hash": "1oBA",
+      "name": "SY 3.0 Webinar Teilnahme",
+      "processId": "17453",
+      "status": "Aktiv",
+      "steps": [
+        {"num": "0", "type": "trigger", "label": "Start-Automation", "detail": "Sobald ein Webhook eintrifft"},
+        {"num": "1", "type": "action", "label": "Tag(s) hinzufügen"}
+      ]
+    },
+    {
+      "hash": "lxnQ",
+      "name": "Webinarregistrierung Manuell Step 2",
+      "processId": "17452",
+      "status": "Aktiv",
+      "steps": [
+        {"num": "0", "type": "trigger", "label": "Start-Automation", "detail": "Sobald ein Webhook eintrifft"},
+        {"num": "1", "type": "action", "label": "Es wird ein Wert für das Feld \"SY3.0 Webinarraum URL Vorregistrierungen\" gesetzt"},
+        {"num": "2", "type": "action", "label": "Der Follow-Up \"StrongerYou Launch Follow Up\" wird gestartet"}
+      ]
+    },
+    {
+      "hash": "5ZlK",
+      "name": "Webinarragistrierung Manuell Step 1",
+      "processId": "17451",
+      "status": "Aktiv",
+      "steps": [
+        {"num": "0", "type": "trigger", "label": "Start-Automation", "detail": "Sobald das Tag Webinarregistrierung manuell hinzugefügt wurde"},
+        {"num": "1", "type": "action", "label": "(action details)"}
+      ]
+    },
+    {
+      "hash": "NPMa",
+      "name": "SY3.0 Webinarkampagne Webinarjam",
+      "processId": "17443",
+      "status": "Aktiv",
+      "steps": [
+        {"num": "0", "type": "trigger", "label": "Start-Automation", "detail": "Sobald eine Eintragung in das Formular StrongerYou 3.0 Launch Workshop Webinarjam bestätigt wurde"},
+        {"num": "1", "type": "action", "label": "(action details)"},
+        {"num": "2", "type": "action", "label": "Tag(s) hinzufügen"},
+        {"num": "3", "type": "action", "label": "Es werden Werte für Felder gesetzt"},
+        {"num": "4", "type": "action", "label": "Es werden Werte für Felder gesetzt"},
+        {"num": "5", "type": "email", "label": "Die E-Mail \"SY3.0 Registrierungsbestätigung\" wird gesendet"},
+        {"num": "6", "type": "action", "label": "Der Follow-Up \"SY3.0 Webinar Follow Up\" wird gestartet"}
+      ]
+    },
+    {
+      "hash": "4G3g",
+      "name": "SY3.0 Webinarkampagne (Legacy)",
+      "processId": "17441",
+      "status": "Aktiv",
+      "steps": [
+        {"num": "0", "type": "trigger", "label": "Start-Automation", "detail": "Sobald eine Eintragung in das Formular StrongerYou Launch Workshop bestätigt wurde"},
+        {"num": "1", "type": "action", "label": "(action details)"},
+        {"num": "2", "type": "action", "label": "Tag(s) hinzufügen"},
+        {"num": "3", "type": "email", "label": "Die E-Mail \"StrongerYou Launch Registrierungsbestätigung\" wird gesendet"},
+        {"num": "4", "type": "action", "label": "Der Follow-Up \"StrongerYou Launch Follow Up\" wird gestartet"}
+      ]
+    }
+  ]
+}

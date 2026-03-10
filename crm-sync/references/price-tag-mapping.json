@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "description": "Stripe Price ID -> Connect Tag mapping. Stripe is source of truth.",
+    "last_verified": "2026-03-06",
+    "total_active_subs": 205
+  },
+  "mapping": {
+    "price_1T6TMpGKl7aVHCCrnVgujaer": {"tag": "connect-monthly", "amount_eur": 69, "interval": "month", "product": "Connect Monat"},
+    "price_1SDpfUGKl7aVHCCrtWpXLkHe": {"tag": "connect-monthly", "amount_eur": 59, "interval": "month", "product": "Connect Monat (Angebot)"},
+    "price_1Sk2aiGKl7aVHCCrmZkPo4dq": {"tag": "connect-annual", "amount_eur": 390, "interval": "year", "product": "Connect Jahr"},
+    "price_1T6TVqGKl7aVHCCrgTuMYumh": {"tag": "connect-annual", "amount_eur": 468, "interval": "year", "product": "Connect Jahr (regulär)"},
+    "price_1S3N1YGKl7aVHCCr6e9Pgcj4": {"tag": "connect-monthly-legacy", "amount_eur": 39, "interval": "month", "product": "Connect Legacy"},
+    "price_1RoNMAGKl7aVHCCrIbGM8SMD": {"tag": "connect-monthly-legacy", "amount_eur": 9.90, "interval": "month", "product": "LIVEstyle alt"},
+    "price_1RyR71GKl7aVHCCrc06w6x17": {"tag": "connect-monthly-legacy", "amount_eur": 19.90, "interval": "month", "product": "LIVEstyle alt"},
+    "price_1RR9KpGKl7aVHCCrBM07R2W0": {"tag": "connect-monthly-legacy", "amount_eur": 29.97, "interval": "month", "product": "LIVEstyle Monthly"},
+    "price_1RaqIIGKl7aVHCCrc4Dv8MZC": {"tag": "connect-monthly-legacy", "amount_eur": 39.97, "interval": "month", "product": "LIVEstyle Weekly"},
+    "price_1RJD8fGKl7aVHCCryxcxqkUq": {"tag": "connect-monthly-legacy", "amount_eur": 29.97, "interval": "month", "product": "LIVEstyle Weekly alt"},
+    "price_1SkCogGKl7aVHCCrDQlkDTsX": {"tag": "connect-annual-legacy", "amount_eur": 299, "interval": "year", "product": "Connect Legacy Jahr"},
+    "price_1SkCmoGKl7aVHCCrMAwNESSB": {"tag": "connect-annual-legacy", "amount_eur": 299, "interval": "year", "product": "LIVEstyle Weekly Jahr"},
+    "price_1RaqJXGKl7aVHCCrwjhcW8Qd": {"tag": "connect-annual-legacy", "amount_eur": 359.64, "interval": "year", "product": "LIVEstyle Weekly Jahr"},
+    "price_1RJD8fGKl7aVHCCre8Hhqm6w": {"tag": "connect-annual-legacy", "amount_eur": 239.64, "interval": "year", "product": "LIVEstyle Weekly Jahr alt"}
+  },
+  "excluded_prices": {
+    "note": "These are NOT Connect subscriptions. They are coaching installment payments.",
+    "patterns": ["97 EUR/mo = SYX.0 Coaching", "179 EUR/mo = SY3.0 Coaching", "189 EUR/mo = SY3.0 Coaching", "349 EUR/mo = SY3.0 Coaching"]
+  }
+}
