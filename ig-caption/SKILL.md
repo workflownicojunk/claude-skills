@@ -1,12 +1,7 @@
 ---
 name: ig-caption
-description: >
-  Write optimized Instagram captions. Generates save-optimized captions with hook
-  variation openers, value body (300-400 chars), save/DM CTAs, niche hashtags,
-  and 500+ character minimum. Scores each caption against the Caption & CTA
-  sub-criteria (20pts max). Output is ready to paste into Instagram.
-  Use when user says "caption", "Beschreibung", "Caption schreiben",
-  "Bildunterschrift", "IG Text", "Reel Caption", "Post Text".
+description: "Write save-optimized Instagram captions with hook openers, CTAs, hashtags."
+user-invocable: false
 allowed-tools:
   - Read
   - Write

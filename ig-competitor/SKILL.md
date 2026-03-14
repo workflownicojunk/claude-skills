@@ -4,6 +4,7 @@ description: >
   Competitor research and analysis via delegation to the ig-research skill.
   Identifies target accounts, delegates data collection, synthesizes findings
   into actionable hooks, formats, and content gaps.
+user-invocable: false
 allowed-tools:
   - Read
   - Write

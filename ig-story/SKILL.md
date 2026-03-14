@@ -4,6 +4,7 @@ description: >
   Plan and structure Instagram Story sequences. Selects the right story type,
   builds a slide sequence with text overlays and interactive elements, and
   delivers a ready-to-produce story brief.
+user-invocable: false
 allowed-tools:
   - Read
   - Write

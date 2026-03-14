@@ -4,6 +4,7 @@ description: >
   Content strategy and positioning analysis for Instagram. Pulls live API data,
   maps audience segments, reviews content pillar distribution, identifies gaps,
   and delivers a 30/60/90-day growth strategy.
+user-invocable: false
 allowed-tools:
   - Read
   - Write

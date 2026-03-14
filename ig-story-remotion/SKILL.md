@@ -1,16 +1,7 @@
 ---
 name: ig-story-remotion
-description: >
-  Create animated Instagram Story video slides using Remotion (React-based video framework).
-  Transforms static Story concepts into polished 9:16 video clips with staggered fade-in
-  animations, brand-compliant design tokens, and professional typography.
-  Handles the full pipeline: template selection, asset preparation, composition coding,
-  preview rendering, and final MP4 export. Use when user asks for "animierte Story",
-  "Story Video", "Story Clip", "Remotion Story", "bewegte Story Slide", "animated CTA",
-  "Slide mit Animation", or when a Story concept benefits from animated text reveals
-  (product launches, affiliate CTAs, countdowns, testimonials). Particularly valuable
-  for sponsored/affiliate content where animated slides outperform static images in
-  watch time and tap-through rate.
+description: "Animated Instagram Story slides via Remotion: 9:16 MP4 with brand-compliant animations."
+user-invocable: false
 license: MIT
 compatibility: Requires Remotion project at ~/Desktop/remotion-stories/. Node.js 20+.
 metadata:

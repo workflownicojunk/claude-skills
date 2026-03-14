@@ -354,3 +354,4 @@ Connect-Kauf → Automation 5ZeG (FU BAMb stoppen)
 | `references/forms-map.md` | 4 forms with details, hashes, triggers | When working with forms |
 | `references/airtable-integration.md` | 5 recommended tables, webhook patterns, n8n workflows | When planning Airtable integration |
 | `references/newsletter-sop.md` | Step-by-step SOP for creating segmented newsletter campaigns | When creating newsletters with playwright-cli |
+| `references/rest-api.md` | Vollständige REST API Referenz: alle 35 Endpoints mit Parametern, Request/Response-Schemas, Gotchas, Python-Schnellstart | Bei JEDER REST API Arbeit — Pflichtlektüre |

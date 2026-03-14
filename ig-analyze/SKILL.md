@@ -4,6 +4,7 @@ description: >
   API-driven Instagram post and account performance analysis. Pulls live data
   via Facebook Graph API, calculates engagement metrics, detects performance
   patterns, and benchmarks against account baselines.
+user-invocable: false
 allowed-tools:
   - Read
   - Write

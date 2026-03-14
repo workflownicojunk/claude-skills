@@ -294,6 +294,13 @@ Caption length: Min 500 chars. Standard 500-1000, educational 1000-2000.
 - Direct camera address: "Ich zeig dir jetzt..."
 - Ends with "Folge mir für mehr..." or "Probier's aus"
 - Less scientific depth, more demonstration
+- Intensifiers cluster: "ganz ganz wichtig", "mega wichtig", "sehr sehr sehr schön"
+- Frequent "Bitte, bitte, bitte" for emphasis on critical points
+- Self-referencing stats as authority: "Ich bin 53. 11% Körperfett. 22 Kilo Muskelmasse."
+- Polarizing positions welcome: "Hör auf mit Cardio." is on-brand. Hedging is not.
+- LIVE-session moments work as Reels: raw, emotional, unscripted segments where
+  Nicol shares personal vulnerability (past trauma, body struggles, marriage) are
+  among the strongest content because they feel authentic, not produced
 
 ### Email/Newsletter
 - Warmer opening (less confrontational hook)

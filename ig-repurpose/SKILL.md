@@ -4,6 +4,7 @@ description: >
   Cross-platform content repurposing from Instagram to TikTok, YouTube Shorts,
   LinkedIn, Email Newsletter, and Blog. Adapts format, aspect ratio, duration,
   tone, and CTA per platform while preserving core message.
+user-invocable: false
 allowed-tools:
   - Read
   - Write

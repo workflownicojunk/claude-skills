@@ -19,6 +19,15 @@ Complete reference for the StrongerYou Circle.so community (~960 members, women 
 
 Der häufigste Use-Case ist: Nicos Circle-Notifications durchgehen und auf technische/Support-Fragen antworten.
 
+### PFLICHT vor jedem DM-Reply: Thread-History laden
+
+Vor dem Verfassen JEDER DM-Antwort:
+1. **Vollständigen Thread laden:** `GET /messages/{uuid}/chat_room_messages?per_page=20`
+2. **Prüfen:** Ist die letzte Nachricht der Person eine Bestätigung ("Danke", "hat geklappt", "super", "ok")? -> NICHT antworten.
+3. **Prüfen:** Hat Nico in den letzten 24h bereits geschrieben? -> NICHT erneut schreiben (außer neue Info).
+4. **Prüfen:** Ist die Frage der Person schon beantwortet (durch eine spätere Nachricht im Thread)? -> NICHT antworten.
+5. **Erst dann:** Antwort verfassen unter strikter Einhaltung von `topic-nico-voice.md`.
+
 ### Vor dem Start: Launch-Kontext laden
 
 Vor jedem Durchlauf zwei Quellen laden:
@@ -121,27 +130,18 @@ json.dump(state, open(os.path.expanduser("~/Desktop/Area/Community/circle-notifi
 - **Reframing statt Entschuldigung:** Statt "Sorry, das funktioniert noch nicht" lieber "Geh mal auf Mitglieder, klick auf den Namen, dann oben rechts auf das Nachrichten-Symbol."
 - **Inhaltliche Fitness-Themen:** NICHT beantworten. Das macht Nicol oder die Moderatorinnen.
 
-### Schreibstil: Kein Bot-Muster!
+### Schreibstil: Nico Junk Tone of Voice (MANDATORY)
 
-Nicos Kommentare müssen sich natürlich in den Community-Ton einfügen. Die Mitglieder schreiben locker, emotional, mit Emojis. Nico darf ruhig etwas sachlicher sein (er ist der Tech-Typ), aber NICHT wie ein Support-Agent klingen.
+**VOR dem Schreiben JEDER Nachricht:** Lade `~/.claude/projects/-Users-nicojunk-Desktop/memory/topic-nico-voice.md`. Dieses File enthält die vollständige, aus 112 echten Nico-DMs extrahierte Tonalitätsreferenz. Jede Nachricht muss diesem File entsprechen.
 
-**Varianz ist Pflicht.** Wenn du mehrere Kommentare in einem Durchlauf schreibst, darf kein erkennbares Muster entstehen:
-- Unterschiedliche Satzlängen (mal 3 Wörter, mal 2 Sätze, mal 4 Sätze)
-- Unterschiedliche Einstiege (nicht jeder Kommentar mit dem Namen anfangen)
-- Gelegentlich 1-2 Emojis einstreuen (aber nicht in jeden Kommentar)
-- Mal eine Rückfrage stellen, mal nur bestätigen, mal einen konkreten Tipp geben
-
-**Support-Antworten:** Dürfen sachlich sein, aber trotzdem menschlich. Statt Schema "Problem erkannt, Lösung geliefert" lieber wie ein hilfsbereiter Kumpel der kurz erklärt wie es geht.
-
-**Bestätigungen/Lob:** Hier ist Abwechslung am wichtigsten. NICHT immer "Genau die richtige Entscheidung" oder "Weiter dranbleiben". Stattdessen:
-- Mal persönlich auf etwas eingehen, das die Person geschrieben hat
-- Mal nur ein kurzes "Top!" oder "Läuft bei dir"
-- Mal eine eigene kleine Anekdote oder Beobachtung einstreuen
-- Auf vorherige Interaktionen Bezug nehmen, wenn vorhanden
-
-**Wiederkehrende Infos (z.B. "Spam prüfen"):** Jedes Mal anders formulieren. Nicht 4x den gleichen Satz.
-
-**Verbotene Muster:** "Das spricht für...", "Genau die richtige Entscheidung", "Weiter dranbleiben/Weiter so" als Standardfloskeln. Einmal pro Durchlauf okay, aber nicht als Default.
+**Kurzfassung der wichtigsten Regeln:**
+- Schreib wie ein hilfsbereiter Kumpel, nicht wie ein Support-Agent
+- Kurze Sätze (8-15 Wörter Durchschnitt), keine Textblöcke
+- KEIN Schema "Begrüßung + Problem bestätigen + Lösung + CTA"
+- KEINE Batch-Versendung (nie mehrere DMs zur gleichen Minute)
+- KEINE Template-Closer: "Meld dich gerne, falls nochmal was ist"
+- Wenn die letzte Nachricht "Danke"/"hat geklappt" war: NICHT antworten
+- Bei Bestätigungen reichen 3-5 Wörter: "Ist behoben 😊"
 
 ### Rate Limits
 

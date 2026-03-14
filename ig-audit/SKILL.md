@@ -4,6 +4,7 @@ description: >
   Full Instagram content audit with parallel subagent delegation. Fetches
   recent posts via Facebook Graph API, spawns specialized analysis agents in parallel,
   aggregates results into a unified report with an IG Health Score (0-100).
+user-invocable: false
 allowed-tools:
   - Read
   - Write

@@ -57,6 +57,16 @@ This file captures mistakes, edge cases, and optimizations discovered during liv
 **What happened:** Tag-Zuweisung schlägt fehl ohne user_email.
 **Fix:** `user_email` ist PFLICHTFELD in `POST /api/admin/v2/tagged_members`.
 
+### 13. BodyGuide-Status falsch beantwortet ohne Versandprüfung (severity: HIGH)
+**What happened:** Ina erhielt "dein Body Guide wird gerade erstellt", obwohl der Plan bereits am selben Morgen zugestellt worden war (mit PDF-Anhang).
+**Root cause:** Weder Triager noch Orchestrator prüften den Versandverlauf bei bodyguide_status-Anfragen. Der Responder antwortete blind ohne Daten.
+**Fix (2026-03-13):** Neue Phase 2.7 "BodyGuide-Delivery-Check" im Orchestrator. Für jeden bodyguide_status plan-Eintrag wird der Versandverlauf via `gws gmail users messages list` geprüft. Ergebnis wird als `delivery_status` (delivered/not_delivered/draft_pending) in den plan-Eintrag geschrieben. Responder liest delivery_status und antwortet entsprechend: "bereits zugestellt, check Spam" vs. "wird gerade erstellt".
+
+### 12. Antworten landen nicht im Thread (severity: CRITICAL)
+**What happened:** Alle E-Mails seit dem Multi-Agent-Workflow (10.03.) wurden als neue Konversationen gesendet statt als Thread-Antworten.
+**Root cause:** Alter Workaround "Send without inReplyTo/threadId" aus Edge Case #71 (Entity not found) wurde zum Default. Das Sende-Script hatte weder In-Reply-To/References-Header noch threadId im Payload.
+**Fix (2026-03-13):** Triager speichert jetzt RFC 822 Message-ID + threadId pro E-Mail im plan-Array. Executor setzt alle drei: In-Reply-To Header, References Header, threadId im JSON-Payload. Vollstaendiges Pattern in ref-gws-patterns.md.
+
 ## Edge Cases Discovered
 
 ### Coaching rate vs. monthly subscription
@@ -68,8 +78,10 @@ Customers sometimes confuse their coaching installment (TYPE_B, 97-349 EUR, cont
 ### Draft label removal quirk
 Gmail API: `removeLabelIds: ["DRAFT"]` throws an error. Use gws batchDelete statt removeLabelIds für Drafts.
 
-### inReplyTo "Entity not found"
-Gmail API: `inReplyTo` parameter expects the RFC 822 Message-ID header (format: `<CAxxxxxx@mail.gmail.com>`), NOT the Gmail message ID. Workaround: Send without `inReplyTo`/`threadId`, use a fresh subject line.
+### inReplyTo "Entity not found" (KORRIGIERT 2026-03-13)
+Gmail API: `inReplyTo` erwartet die RFC 822 Message-ID (Format: `<CAxxxxxx@mail.gmail.com>`), NICHT die Gmail message ID.
+**ALTER WORKAROUND WAR FALSCH:** "Send without inReplyTo/threadId" fuehrte dazu, dass Antworten NICHT im Thread landeten.
+**KORREKTER ANSATZ:** Triager muss fuer jede E-Mail die RFC 822 Message-ID + threadId mitspeichern. Executor setzt alle drei: `In-Reply-To` Header, `References` Header, und `threadId` im JSON-Payload. Siehe ref-gws-patterns.md fuer das vollstaendige Pattern.
 
 ### Connect pricing confusion
 Multiple Connect price points exist (39/59/69 EUR monthly, 299/390/468 EUR yearly). Always verify the customer's actual price in Stripe before quoting any number.
@@ -113,3 +125,7 @@ Sonnet-Responder verwendet manchmal „..." (typografische Anführungszeichen) i
 | 2026-03-09 | 29 | 18 | 0 | ~142 | Roberta + Claudia Circle freigeschaltet. 25 Drafts geleert. |
 | 2026-03-10 | 50 | 17 | 0 | ~48 | ERSTER multi-agent Workflow-Test. 4 Agents (Haiku/Sonnet). 33 archiviert, 18 Drafts gelöscht. Fixes: SUPABASE_KEY→SUPABASE_SERVICE_ROLE_KEY, batchModify braucht userId:me, Duplikat-Erkennung verschärft, Stripe API direkt statt Supabase RPC. |
 | 2026-03-10b | 50 | 9 | 0 | ~45 | 9 Antworten (6 FAQ, 3 Access), 39 archiviert, 1 Draft gelöscht. Orchestrator korrigierte Umlaute (Responder liefert ae/oe/ue statt ä/ö/ü) + entfernte unverified payment claim bei Nadine. Executor hat beantwortete Mails nicht archiviert → Orchestrator fix via modify --json body. |
+| 2026-03-10c | 50 | 8 | 0 | ~55 | 8 Antworten (4 FAQ, 4 Access), 38 archiviert, 4 Drafts gelöscht. Orchestrator korrigierte Responder-Umlaute (ae/oe/ue→ä/ö/ü) via Python-Script. Leeres Versprechen bei Carolin entfernt ("kommt gleich zu dir"). Duplikat-Rate: 33/50 (66%) durch gestrige Session. 2 E-Mail-Mismatch-Fälle (Lisa Sperl, Katja Zabatino) - warten auf Rückantwort. |
+| 2026-03-13 | 34 | 5 | 0 | ~80 | 4 Antworten (3 FAQ, 1 Access) + 1 BodyGuide-Draft (Sandra Ewert, Gemini QA bestanden). 29 archiviert. Orchestrator korrigierte Ina-Antwort (falsche "sollte da sein"-Behauptung → korrekte "wird erstellt"-Info). Renate message_id manuell nachgeholt. Karolina: Zugang existierte bereits unter karo_wa@hotmail.de, nur Login-Hinweis nötig. Duplikat-Rate: 21/34 (62%). Keine Beschwerden, keine Kündigungen, keine Refund-Anfragen. |
+| 2026-03-14 | 50 | 26 | 0 | ~120 | 24 Antworten (8 BodyGuide-Status, 5 Access, 11 FAQ/Feedback) + 2 BodyGuide-PDFs (Ananka Dähn, Sandra v. Swietochowski, Gemini QA bestanden). 3 Circle-Freischaltungen (Julia Raschko, Emma Eitel, Jenny Beckmann). 2 4leads Tags (43570) gesetzt. 53 archiviert (49+4 Nachzügler). 2 Duplikat-Drafts gelöscht. 0 Fehler, 0 Qualitätsprobleme. 1 manuelle Aktion: Jenny Beckmann E-Mail-Umstellung im Circle-Dashboard (API unterstützt keine E-Mail-Änderung). Inbox+Drafts leer. Keine Kündigungen, keine Refunds. |
+| 2026-03-14b | 7 | 1 | 0 | ~40 | Nachlauf-Session. 1 FAQ (Ingrid Manheim, Portionsfrage Eiermuffins). 6 Duplikate archiviert (Renate, Julia R., Billhard, Anja, Sandra v.S., Judith H.). Inbox+Drafts leer. Keine Eskalationen. Judith Heurich frustriert wegen fehlender Alternativen (nächste Session priorisieren). |

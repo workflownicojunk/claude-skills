@@ -5,6 +5,7 @@ description: >
   671912-20048 account balances, 2025 annual summary, and discovered DATEV REST
   API endpoints. Do NOT trigger this skill directly. Use datev-accounting for all
   DATEV tasks including EXTF imports, VAT calculation, reconciliation, and portal queries.
+user-invocable: false
 ---
 # DATEV Intelligence Skill
 **Version:** 1.0 | **Created:** 2026-02-22 | **Context:** Lightness Fitness / Nicol Stanzel

@@ -1,11 +1,7 @@
 ---
 name: 4l-tags
-description: >
-  Verwaltet Tags in 4leads: auflisten, erstellen, löschen, und Kontakten zuweisen.
-  Wichtig: Tag-Zuweisung per REST API funktioniert NICHT zuverlässig. Für Tag-Zuweisung
-  den n8n fleads Node nutzen. Nutze diesen Command wenn der User Tags in 4leads auflisten,
-  einen Tag erstellen, Tag-Statistiken sehen, oder einem Kontakt einen Tag zuweisen möchte.
-user_invocable: true
+description: "4leads Tags auflisten, erstellen und zuweisen (Zuweisung via n8n, nicht REST API)."
+user-invocable: false
 invocation: /4l-tags
 arguments:
   - name: input

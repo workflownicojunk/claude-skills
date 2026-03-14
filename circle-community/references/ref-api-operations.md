@@ -389,58 +389,73 @@ GET /internal_api/communities/custom_invitation_email
 
 ### Direct Messages (DMs)
 
-**WICHTIG: API-Hierarchie für DMs:**
-- **Lesen:** Headless API funktioniert (`GET /messages`, `GET /messages/{uuid}/chat_room_messages`)
-- **Senden:** NUR Internal API (Cookie Auth), Headless API gibt 404
-- **Chat-Room erstellen:** Headless API funktioniert
+**API-Hierarchie für DMs (verifiziert 2026-03-13):**
+- **Lesen:** Headless API (`GET /messages`, `GET /messages/{uuid}/chat_room_messages`)
+- **Senden:** Headless API funktioniert direkt mit JWT. Kein Playwright/Browser nötig!
+- **Löschen:** Headless API (`DELETE /messages/{uuid}/chat_room_messages/{id}`)
+- **Chat-Room erstellen:** Headless API
+- **Internal API:** Nur noch als Fallback, erfordert Browser-Session (Playwright)
 
 ```bash
-# Chat-Rooms auflisten (Headless API, JWT Auth)
+# JWT holen (Nico-Key für Support-Antworten)
+NICO_KEY=$(grep '^CIRCLE_HEADLESS_MEMBER_API_KEY_NICO=' ~/Desktop/.env | cut -d= -f2)
+JWT=$(curl -s -X POST "https://app.circle.so/api/v1/headless/auth_token" \
+  -H "Authorization: Bearer $NICO_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"email":"info@nicojunk.com"}' | python3 -c "import json,sys; print(json.load(sys.stdin)['access_token'])")
+
+# Chat-Rooms auflisten
 GET /api/headless/v1/messages
-# Response: {records: [{uuid, chat_room_name, chat_room_kind, ...}]}
+# Response: {records: [{uuid, chat_room_name, unread_messages_count, chat_room_kind,
+#   other_participants_preview: [{id (participant_id), community_member_id, name, email}],
+#   current_participant: {id (eigene participant_id), ...}}]}
 
-# Nachrichten lesen (Headless API, JWT Auth)
-GET /api/headless/v1/messages/{UUID}/chat_room_messages
-# Response: {records: [{id, body, rich_text_body, created_at, chat_room_participant_id, ...}]}
+# Nachrichten lesen
+GET /api/headless/v1/messages/{UUID}/chat_room_messages?per_page=25
+# Response: {records: [{id, body, rich_text_body, chat_room_participant_id, sent_at, ...}]}
 
-# Chat-Room erstellen (Headless API, JWT Auth)
+# Nachricht senden (VERIFIZIERT - kein Wrapper, kein participant_id nötig!)
+POST /api/headless/v1/messages/{UUID}/chat_room_messages
+{"rich_text_body": {"body": {"type":"doc","content":[{"type":"paragraph","content":[{"type":"text","text":"Nachricht"}]}]}, "attachments": []}}
+# Erfolg: HTTP 202 {"creation_uuid":"...","sent_at":"ISO8601"}
+
+# Nachricht löschen
+DELETE /api/headless/v1/messages/{UUID}/chat_room_messages/{MESSAGE_ID}
+# Erfolg: HTTP 200 {}
+
+# Chat-Room erstellen
 POST /api/headless/v1/messages
 {"chat_room":{"community_member_ids":[MEMBER_ID],"kind":"direct"}}
-# Response: {uuid, ...}
 
-# Nachrichten abrufen (Internal API, Cookie Auth) - alternativ zu Headless
-GET /internal_api/chat_rooms/{UUID}/messages?previous_per_page=20&next_per_page=0
+# Room-Details (gibt current_participant.id = eigene participant_id)
+GET /api/headless/v1/messages/{UUID}
+# Nützlich um zu prüfen wer die letzte Nachricht gesendet hat (chat_room_participant_id vergleichen)
+```
 
-# Nachricht senden (Internal API, Cookie Auth) - EINZIGER Weg!
+**Bekannte Chat-UUIDs:**
+| Chat | UUID |
+|------|------|
+| Nicol Stanzel (Nicols Account) | `85eccd9a-d0d0-4d0d-872b-7775f1ae58b3` |
+
+**Python-Pattern für DM senden:**
+```python
+import urllib.request, json
+
+jwt = "..."  # Aus auth_token Endpoint
+headers = {'Authorization': f'Bearer {jwt}', 'Content-Type': 'application/json', 'User-Agent': 'CRM-Sync/1.0'}
+
+payload = json.dumps({"rich_text_body": {"body": {"type":"doc","content":[{"type":"paragraph","content":[{"type":"text","text":"Nachricht"}]}]},"attachments":[]}}).encode()
+req = urllib.request.Request(f'https://app.circle.so/api/headless/v1/messages/{uuid}/chat_room_messages', data=payload, headers=headers, method='POST')
+with urllib.request.urlopen(req) as resp:
+    result = json.load(resp)  # {"creation_uuid":"...","sent_at":"..."}
+```
+
+**Internal API (Fallback, nur wenn Headless nicht klappt):**
+```bash
+# Senden via Playwright eval (Cookie Auth)
 POST /internal_api/chat_rooms/{UUID}/messages/
-{"chat_room_message":{"chat_room_participant_id":PARTICIPANT_ID,"rich_text_body":{"body":{"type":"doc","content":[{"type":"paragraph","content":[{"type":"text","text":"Nachrichtentext"}]}]},"attachments":[]},"unfurl_urls":{}}}
-# rich_text_body.body ist ProseMirror JSON (type: doc > paragraph > text)
-# chat_room_participant_id: Nicos Participant-ID im jeweiligen Chat-Room (aus GET /internal_api/chat_rooms/{UUID} > current_participant.id)
-# Erfolg: HTTP 202 mit {creation_uuid, sent_at}
-# CSRF-Token nötig: X-CSRF-Token Header aus <meta name="csrf-token"> im DOM
-
-# Bewährtes Pattern: DM senden via Playwright eval
-# playwright-cli eval "async () => {
-#   const csrf = document.querySelector('meta[name=csrf-token]')?.content || '';
-#   const r = await fetch('/internal_api/chat_rooms/{UUID}/messages/', {
-#     method: 'POST', credentials: 'include',
-#     headers: {'Content-Type': 'application/json', 'X-CSRF-Token': csrf},
-#     body: JSON.stringify({chat_room_message: {chat_room_participant_id: ID,
-#       rich_text_body: {body: {type:'doc',content:[{type:'paragraph',content:[{type:'text',text:'Msg'}]}]},attachments:[]}, unfurl_urls:{}}})
-#   });
-#   return r.status + ' ' + (await r.text()).substring(0, 300);
-# }"
-
-# Nachricht löschen (Internal API, Cookie Auth)
-DELETE /internal_api/chat_rooms/{UUID}/messages/{MESSAGE_ID}
-
-# Chat-Room Details + Participants (participant_id ermitteln)
-GET /internal_api/chat_rooms/{UUID}
-# Response enthält current_participant.id (Nicos participant_id für diesen Chat)
-GET /internal_api/chat_rooms/{UUID}/participants?page=1&per_page=25
-
-# Als gelesen markieren
-PATCH /internal_api/chat_rooms/{UUID}/mark_as_read
+{"chat_room_message":{"chat_room_participant_id":PARTICIPANT_ID,"rich_text_body":{...},"unfurl_urls":{}}}
+# CSRF-Token aus <meta name="csrf-token"> nötig
 ```
 
 ### Connect & Messaging Settings (Admin)

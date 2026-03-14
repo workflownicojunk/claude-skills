@@ -1,17 +1,7 @@
 ---
 name: ig-produce
-description: >
-  Autonomous end-to-end Instagram content production. The user provides only video files
-  (or nothing at all), and Claude handles everything: account health check via Instagram
-  Graph API, content gap analysis, video material analysis via Gemini, topic selection,
-  format decision (Reel/Carousel/Story), hook generation, script writing, caption,
-  thumbnail concept, and Content Quality Score. The entire production chain runs without
-  requiring the user to specify topic, format, CTA, or any creative decisions.
-  Use when user says "mach ein Reel", "produziere Content", "was soll ich heute posten",
-  "hier sind meine Videos", "produce", "autopilot", "Content produzieren",
-  "Instagram Content machen", "Reel schneiden", "was braucht mein Account",
-  "mach was aus dem Material", "Videos zu Reel", or provides video file paths without
-  a specific topic or format instruction.
+description: "Autonomous end-to-end Instagram content production from raw video to publish-ready post."
+user-invocable: false
 license: MIT
 compatibility: Requires Claude Code. Instagram Graph API credentials in .env. google-genai for video analysis.
 metadata:

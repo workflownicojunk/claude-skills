@@ -1,12 +1,7 @@
 ---
 name: 4l-newsletter
-description: >
-  Erstellt segmentierte Newsletter-Kampagnen in 4leads via playwright-cli. Deckt den kompletten
-  5-Phasen-Workflow ab: Referenz-Design exportieren, Segment-E-Mails in Python generieren,
-  Designs per localStorage-Transfer hochladen, Newsletter mit Tag-basierter Empfänger-Segmentierung
-  konfigurieren, und verifizieren. Nutze diesen Command wenn der User einen Newsletter erstellen,
-  eine E-Mail-Kampagne versenden, oder Empfänger nach Tags segmentieren möchte.
-user_invocable: true
+description: "4leads Newsletter-Kampagnen erstellen mit Tag-basierter Empfänger-Segmentierung."
+user-invocable: false
 invocation: /4l-newsletter
 arguments:
   - name: input

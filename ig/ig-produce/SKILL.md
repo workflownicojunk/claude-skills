@@ -77,6 +77,13 @@ the right content depends entirely on what's already been posted and how it perf
    - Days since last affiliate post (for spacing compliance)
    - Any content type not posted in 7+ days (content gap)
 
+5. **Audience Signals (optional, high-value):**
+   Check recent comments on the last 3-5 posts for recurring questions or requests.
+   These are direct content ideas from the audience. Patterns like "how much weight
+   should I start with?" or "can you show this for beginners?" reveal what followers
+   want next. If a question appears 3+ times across posts, it becomes a top-priority
+   topic candidate for Phase 3.
+
 5. **Graceful degradation:** If API fails or tokens are expired, fall back to
    `references/account-baseline.md`. Clearly mark all decisions as "based on cached
    data" and warn the user.
@@ -85,7 +92,12 @@ the right content depends entirely on what's already been posted and how it perf
 
 ### Phase 2: Material Analysis (90 seconds)
 
-If the user provided video files, analyze them with Gemini to understand what's available.
+**Material-first is the primary workflow.** Nicol typically provides LIVE recordings
+(60-90 min), Zoom sessions, or raw workout footage. The job is to find the best
+30-45 second moments and build the Reel around them. This is fundamentally different
+from "pick a topic, then write a script": the material dictates the content.
+
+If the user provided video files, analyze them with Gemini to find the strongest moments.
 If no files were provided, skip to Phase 3 and produce a text-based concept instead.
 
 1. **Analyze each video** using the content mode to understand what each clip shows:
@@ -103,12 +115,24 @@ If no files were provided, skip to Phase 3 and produce a text-based concept inst
    - Overall energy level and mood
    - Technical quality (resolution, lighting, stability)
 
-3. **Material Assessment:** Decide which clips are usable, which combine well,
+3. **For long-form material (LIVE recordings, Zoom sessions >10 min):**
+   Use Gemini to find the top 3 viral moments with timestamps:
+   ```
+   "Analysiere dieses Video als Viral-Fitness-Content-Experte fuer Frauen 35-65.
+   Finde die 3 staerksten Momente fuer ein Instagram Reel (max 45 Sekunden).
+   Fuer jeden Moment: exakte Start/End-Timestamps (MM:SS), Hook-Text,
+   warum dieser Moment viral funktioniert (Score 1-10), und emotionalen Kern."
+   ```
+   This is Nicol's primary workflow: she records 60-90 minute LIVE sessions and
+   wants the best moments turned into Reels. The material drives the topic, not
+   the other way around.
+
+4. **Material Assessment:** Decide which clips are usable, which combine well,
    and what kind of content they naturally support. A talking head clip with good
    audio suggests a Correction or Bold Claim Reel. Silent B-roll suggests a
    text-on-screen or voiceover approach. Product close-ups suggest affiliate content.
 
-**Artifact:** Material Report (internal)
+**Artifact:** Material Report (internal, includes top 3 moments with timestamps if long-form)
 
 ### Phase 3: Strategic Decision (30 seconds)
 
@@ -142,10 +166,26 @@ Select from the hook library based on:
 - Which hook categories performed best (Phase 1 top posts)
 - Which categories were used in the last 5 posts (avoid repetition)
 - Which category fits the chosen topic most naturally
+- **What the material shows** (a workout demo naturally fits Demo/Exercise, not Correction)
 
-Strongly prefer CORRECTION hooks (proven #1 performer with 5.0-5.3% save rate)
-unless the last 2 posts already used Correction. In that case, rotate to Identity
-Trigger or Bold Claim.
+Five equally valid format types. Correction is strong but not the default for everything:
+
+| Format Type | Hook Style | Best For |
+|------------|-----------|----------|
+| Correction | "Die meisten Frauen..." | Myth-busting, educational. Max 2x/week. |
+| Demo/Exercise | Stats overlay + exercise label | Gym footage, technique explanation |
+| Recipe/Nutrition | Food close-up + benefit claim | Meal prep, ingredient spotlight |
+| Talk-to-Camera | Spoken hook, phrase-level captions | Personal story, deep explanation |
+| Transformation | Before/after or stats flex | Testimonial, progress, age-as-strength |
+
+Rotate categories. If the last 2 posts used the same format type, pick a different one.
+When material clearly shows an exercise, use Demo, not Correction.
+
+#### Optional: Coordination check
+
+If Majena (community/DM management) is also creating content this week, note her
+planned topics in the Creative Brief to avoid overlap. This is informational, not
+a blocker. If Majena's schedule is unknown, proceed without it.
 
 **Artifact:** Creative Brief (shown to user for confirmation before proceeding)
 
@@ -218,37 +258,42 @@ Route to `ig-story-remotion` sub-skill for animated production, or standard
    re-score. Repeat until >= 80 or 3 revision rounds (then deliver with
    revision notes explaining what's holding the score back).
 
-4. **Deliver the complete package:**
+4. **Deliver the complete package in two blocks:**
+
+**Block A: Copy-Paste-Ready (this is what Nicol opens Instagram for)**
+
+Since Instagram Graph API does not support direct media upload, everything must
+be copy-paste ready. Nicol opens this block, copies the caption into Instagram,
+and she's done. No searching through DOCX files or Notion databases.
 
 ```
-REEL PACKAGE
-━━━━━━━━━━━━
+POSTING-FERTIG
+━━━━━━━━━━━━━━
 
-HOOK (Score: X/25)
-[Opening line]
+CAPTION (direkt in Instagram einfuegen):
+---
+[Complete caption with hook opener, value body, CTA, line breaks, hashtags.
+ Ready to paste. Nothing to edit.]
+---
 
-SCRIPT (Score: X/25)
-[Full timed script]
-
-CAPTION (Score: X/20)
-[Complete caption with hashtags]
-
-THUMBNAIL
-[Concept description]
-
-FORMAT COMPLIANCE (Score: X/15)
-[Specs check]
-
-ALGORITHM SIGNALS (Score: X/15)
-[Save/DM optimization notes]
-
-━━━━━━━━━━━━
-TOTAL SCORE: XX/100 (Grade: X)
-
-POSTING RECOMMENDATION
-Beste Zeit: [day, time window based on account data]
-Nächster Schritt: [concrete action for the user]
+THUMBNAIL-TEXT: [exact text for cover image]
+POSTING-ZEIT: [day, time window]
+HASHTAGS: [already included in caption above, listed separately for quick check]
 ```
+
+**Block B: Production Notes (for reference, not for Instagram)**
+
+```
+SCORE: XX/100 (Grade: X)
+  Hook Strength: X/25 | Content: X/25 | Caption: X/20 | Format: X/15 | Algorithm: X/15
+
+HOOK CATEGORY: [which type was used]
+MATERIAL USED: [which clip, timestamps if applicable]
+VISUAL STYLE: [reference to reel-visual-style.md pattern A or B]
+```
+
+The separation matters: Block A is what Nicol needs in the moment of posting.
+Block B is what helps improve the skill over time.
 
 5. **Posting time recommendation:** Based on Phase 1 data, identify when the
    top-performing posts were published. Recommend a time window (not an exact
@@ -268,6 +313,7 @@ Nächster Schritt: [concrete action for the user]
 | `references/affiliate-compliance.md` | Phase 3+4 if affiliate content detected |
 | `references/conversion-pipeline.md` | Phase 3 for CTA strategy |
 | `references/video-analysis-pipeline.md` | Phase 2 for Gemini video analysis |
+| `references/reel-visual-style.md` | Phase 4 for visual style (text, fonts, colors, NO overengineering) |
 
 ## Quality Gates
 

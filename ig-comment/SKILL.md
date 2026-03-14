@@ -4,6 +4,7 @@ description: >
   Comment response strategy and semi-automated handling. Defines response rules
   by comment category, maintains the creator's authentic voice, and references
   Make.com automation blueprints for scalable comment management.
+user-invocable: false
 allowed-tools:
   - Read
   - Write

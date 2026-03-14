@@ -1,11 +1,7 @@
 ---
 name: 4l-contact
-description: >
-  Sucht und verwaltet Kontakte in 4leads per REST API. Kann Kontakte per E-Mail suchen,
-  Custom Fields setzen, Kontaktdetails anzeigen, und neue Kontakte erstellen.
-  Nutze diesen Command wenn der User einen Kontakt in 4leads suchen, Kundendaten nachschlagen,
-  ein Custom Field setzen, oder einen neuen Kontakt anlegen möchte.
-user_invocable: true
+description: "4leads Kontakte suchen, erstellen und Custom Fields setzen via REST API."
+user-invocable: false
 invocation: /4l-contact
 arguments:
   - name: input

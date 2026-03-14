@@ -4,6 +4,7 @@ description: >
   Generate editorial content calendars for Instagram. Validates content mix
   against targets, spaces affiliate content correctly, and outputs weekly
   or monthly plans with format, topic, hook category, and posting schedule.
+user-invocable: false
 allowed-tools:
   - Read
   - Write

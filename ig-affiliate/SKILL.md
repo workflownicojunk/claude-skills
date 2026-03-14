@@ -4,6 +4,7 @@ description: >
   Create compliant affiliate content for Instagram. Loads partner playbooks,
   selects proven content patterns, writes scripts and captions with mandatory
   German advertising disclosure, and validates against legal and scheduling rules.
+user-invocable: false
 allowed-tools:
   - Read
   - Write

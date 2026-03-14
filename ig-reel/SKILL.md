@@ -1,13 +1,7 @@
 ---
 name: ig-reel
-description: >
-  Complete Instagram Reel production. Generates hook variants with scoring,
-  timed script (0-30s structure), caption (500+ chars with save CTA), thumbnail
-  concept, and full 5-category Content Quality Score. Optimized for 2026
-  algorithm signals (watch time, DM-sends, saves). Covers simple tips (7-15s),
-  technique explanations (15-30s), and mini-tutorials (30-60s).
-  Use when user says "Reel", "Reel schreiben", "Reel skript", "neues Reel",
-  "Reel erstellen", "video script", "reel topic".
+description: "Instagram Reel script: hook variants, timed script, caption, thumbnail concept."
+user-invocable: false
 allowed-tools:
   - Read
   - Write

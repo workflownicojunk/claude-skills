@@ -1,11 +1,7 @@
 ---
 name: 4l-automation
-description: >
-  Prüft und debuggt Automationen in 4leads. Zeigt den Status aller Automationen, die
-  Step-Konfiguration einer spezifischen Automation, und hilft bei der Fehlersuche wenn
-  eine Automation nicht wie erwartet feuert. Nutze diesen Command wenn der User eine
-  Automation prüfen, debuggen, oder den Status aller Automationen sehen möchte.
-user_invocable: true
+description: "4leads Automationen prüfen, debuggen und Status einsehen."
+user-invocable: false
 invocation: /4l-automation
 arguments:
   - name: input

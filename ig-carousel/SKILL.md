@@ -4,6 +4,7 @@ description: >
   Plan Instagram carousel posts with optimized slide structure, compelling
   cover hooks, and save-driven CTAs. Scores the carousel against engagement
   benchmarks before delivery.
+user-invocable: false
 allowed-tools:
   - Read
   - Write

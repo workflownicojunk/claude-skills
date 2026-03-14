@@ -1,12 +1,7 @@
 ---
 name: ig-hook
-description: >
-  Generate and score Instagram hooks. Produces 3 hook variants across 5 categories
-  (Correction, Identity Trigger, Bold Claim, Curiosity Gap, Relatable Pain),
-  scores each on a 25-point rubric, and outputs the top 2 as A/B variants with
-  text overlay, spoken text, and visual action. Supports compound hooks for
-  higher scores. Use when user says "hook", "hook schreiben", "hooks generieren",
-  "reel hook", "ig hook", "hook ideen", "hook varianten".
+description: "Generate and score Instagram hooks across 5 categories with A/B variants."
+user-invocable: false
 allowed-tools:
   - Read
   - Write

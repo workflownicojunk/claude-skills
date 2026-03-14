@@ -10,19 +10,33 @@ Data source: Instagram Graph API via MCP tools + manual 100-post analysis
 
 ### Authentication
 
-| Variable | Value |
-|----------|-------|
-| `INSTAGRAM_ACCESS_TOKEN` | `[stored in .env, never hardcoded]` |
-| `INSTAGRAM_USER_ID` | `[your Instagram user ID]` |
-| `INSTAGRAM_BUSINESS_ACCOUNT_ID` | `[your business account ID]` |
+| Variable | Wert | Status |
+|----------|------|--------|
+| `META_PAGE_TOKEN` | in `~/Desktop/.env` | AKTIV (getestet 13.03.2026) |
+| `INSTAGRAM_ACCESS_TOKEN` | in `~/Desktop/.env` | ABGELAUFEN (OAuthException 2500) |
+| `INSTAGRAM_BUSINESS_ACCOUNT_ID` | `17841408804651544` | @nicolstanzel |
+| `META_PAGE_ID` | `489648017568050` | Facebook Page "Nicol Stanzel" |
+
+### WICHTIG: Welchen Token verwenden?
+
+**IMMER `META_PAGE_TOKEN` verwenden.** Der `INSTAGRAM_ACCESS_TOKEN` ist ein User Token, der regelmäßig abläuft. Der `META_PAGE_TOKEN` ist ein Page Token, der langlebig ist und alle benötigten Rechte hat.
+
+```bash
+# RICHTIG:
+source ~/Desktop/.env
+curl "https://graph.facebook.com/v21.0/17841408804651544/media?fields=id,caption,media_type,timestamp&access_token=$META_PAGE_TOKEN"
+
+# FALSCH (Token abgelaufen):
+curl "...&access_token=$INSTAGRAM_ACCESS_TOKEN"
+```
 
 ### Token Details
 
-- App: [your Meta app name] (App ID: `[app-id]`)
-- Type: Long-Lived, non-expiring (`expires_at=0`) or [rotation schedule]
-- Scopes: 20+ (includes `instagram_basic`, `instagram_manage_insights`, `pages_read_engagement`, etc.)
-- Source: `source ~/Desktop/.env` (never hardcode in scripts)
-- Backup token: [describe backup token setup or "none"]
+- App: Nicol Stanzel Instagram (App ID: `1712891086035275`)
+- Typ: Page Token (langlebig, nicht ablaufend solange App-Berechtigungen bestehen)
+- Scopes: `instagram_basic`, `instagram_manage_insights`, `pages_read_engagement`, `pages_show_list`
+- Source: `source ~/Desktop/.env` (nie hardcoden)
+- Backup: Apify (`APIFY_TOKEN` in .env) als Fallback, liefert aber keine Saves/Shares/Reach
 
 ### MCP Tool Reference
 

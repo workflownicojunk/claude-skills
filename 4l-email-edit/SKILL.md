@@ -1,12 +1,7 @@
 ---
 name: 4l-email-edit
-description: >
-  Bearbeitet E-Mail-Templates im 4leads Unlayer Editor via playwright-cli. Öffnet den Editor,
-  exportiert das aktuelle Design als JSON, ermöglicht Änderungen (Text, Links, Bilder, Platzhalter),
-  und lädt das modifizierte Design zurück. Nutze diesen Command wenn der User eine bestehende E-Mail
-  bearbeiten, einen Platzhalter korrigieren, einen Link ändern, oder Text in einer E-Mail-Vorlage
-  anpassen möchte.
-user_invocable: true
+description: "4leads E-Mail-Templates im Unlayer Editor bearbeiten (Text, Links, Platzhalter)."
+user-invocable: false
 invocation: /4l-email-edit
 arguments:
   - name: input
